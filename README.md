@@ -32,9 +32,9 @@ are modified, based on experiments rather than assumptions.
 
 ---
 
-```
-## Repository Structure
 
+## Repository Structure
+```
 adb/ → ADB commands and rollback guides
 experiments/ → Controlled battery experiments
 ├── job_scheduler/
@@ -43,7 +43,7 @@ experiments/ → Controlled battery experiments
 metrics/ → Batterystats and drain analysis
 setedit/ → SetEdit-related observations
 oem-notes/ → OEM-specific behavior notes
-   
+```  
 
 
 ---
