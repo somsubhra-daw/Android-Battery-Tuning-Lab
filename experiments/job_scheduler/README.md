@@ -16,17 +16,19 @@ Default JobScheduler quota values were recorded before applying any
 custom configuration.
 
 Command used:
+```
 adb shell settings get global job_scheduler_quota_controller_constants
-
+```
 
 ## Experiment Setup
 A conservative quota configuration was applied to reduce excessive
 background job execution without breaking app functionality.
 
 Command applied:
+```
 adb shell settings put global job_scheduler_quota_controller_constants
 max_job_count_per_rate_limiting_window=10,rate_limiting_window_ms=60000
-
+```
 
 ## Metrics Collected
 - Screen-off battery drain (%/hour)
@@ -39,8 +41,9 @@ max_job_count_per_rate_limiting_window=10,rate_limiting_window_ms=60000
 
 ## Rollback
 To restore default behavior:
+```
 adb shell settings delete global job_scheduler_quota_controller_constants
-
+```
 
 ## Notes
 Results may vary across OEMs due to additional background execution
