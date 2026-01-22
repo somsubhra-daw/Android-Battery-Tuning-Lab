@@ -32,6 +32,7 @@ are modified, based on experiments rather than assumptions.
 
 ---
 
+```
 ## Repository Structure
 
 adb/ → ADB commands and rollback guides
