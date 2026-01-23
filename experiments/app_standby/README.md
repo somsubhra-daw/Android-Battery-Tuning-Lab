@@ -1,1 +1,4 @@
-App Standby bucket experiments
+- Initial reported bucket value: 45 (OEM-mapped RARE)
+- Subsequent reported bucket value: 40 (AOSP-aligned RARE)
+- Indicates dynamic standby bucket recalculation by the system
+- No transition back to ACTIVE observed during idle
