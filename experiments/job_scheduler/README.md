@@ -37,8 +37,20 @@ max_job_count_per_rate_limiting_window=10,rate_limiting_window_ms=60000
 - User-visible side effects
 
 ## Observations
-(To be filled after 24 hours of testing)
+## Analysis (Test 1)
 
+With conservative JobScheduler quota limits applied, background jobs
+executed in more grouped bursts rather than frequent isolated wakeups.
+
+Notification delivery and system services remained functional, indicating
+no major regressions from this configuration.
+
+However, standby wakeups attributed to WLAN-related wake reasons
+(e.g., WLAN_CE_2, qcom_rx_wakelock) persisted, confirming that these
+are outside the scope of JobScheduler control.
+
+This experiment demonstrates that JobScheduler tuning can improve
+scheduler behavior but cannot resolve kernel or driver-level power issues.
 ## Rollback
 To restore default behavior:
 ```
