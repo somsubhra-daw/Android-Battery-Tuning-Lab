@@ -1,0 +1,4 @@
+Package: com.instagram.android
+Reported standby bucket value: 45
+Interpretation: OEM-mapped RARE bucket
+Notes: Device reports numeric standby bucket instead of textual label
